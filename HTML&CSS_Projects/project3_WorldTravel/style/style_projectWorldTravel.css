@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #E5EEFF;
+}
+
+.divContainer {
+    margin: 0 auto;
+    margin-top: 298px;
+    margin-bottom: 266px;
+    width: 1248px;
+    height: 1727px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.img {
+    width: 296px;
+    height: 270px;
+    border: 1px solid #000;
+}
+
+.discover {
+    background-color: #020253;
+    width: 613px;
+    height: 562px;
+    border: 1px solid #000;
+}
+
+.discover h1 {
+    color: #0EE1DA;
+    text-align: center;
+    font: normal normal bold 61px/80px Assistant;
+    margin: 195px 110px 0px 104px;
+}
+
+.discover p {
+    text-align: center;
+    font: normal normal normal 20px/26px Assistant;
+    color: #F9F9F9;
+    margin: 19px 75px 216px 63px;
+}
+
+.experience {
+    background-color: #8E097C;
+    width: 613px;
+    height: 852px;
+    border: 1px solid #000;
+}
+
+.experience h2 {
+    text-align: center;
+    font: normal normal bold 35px/46px Assistant;
+    color: #FFFFFF;
+    margin: 63px 143px 0px 130px;
+}
+
+.experience p {
+    text-align: center;
+    font: normal normal normal 20px/26px Assistant;
+    color: #F9F9F9;
+    margin: 23px 75px 0px 63px;
+}
+
+.experience form {
+    margin: 70px 56px 0px 56px;
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+}
+
+.experience form label {
+    font: normal normal bold 16px/24px Heebo;
+    color: #0EE1DA;
+}
+
+.inputText {
+    width: 500px;
+    height: 60px;
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+    border: none;
+    border-bottom: 5px solid #0EE1DA;
+}
+
+#emailLabel {
+    margin-top: 30px;
+}
+
+#experienceLabel {
+    margin-top: 20px;
+}
+
+.inputTextExperience {
+    width: 500px;
+    height: 172px;
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+    border: none;
+    border-bottom: 5px solid #0EE1DA;
+}
+
+.inputButton {
+    margin-top: 20px;
+    width: 501px;
+    height: 60px;
+    background: #0EE1DA 0% 0% no-repeat padding-box;
+    font: normal normal bold 24px/33px Heebo;
+    letter-spacing: 0.36px;
+    color: #011560;
+    border: none;
+    cursor: pointer;
+}
+
+.img1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.img2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.discover {
+    grid-column: 3/5;
+    grid-row: 1/3;
+
+}
+
+.img3 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.img4 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.img5 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.img6 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.img7 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.img8 {
+    grid-column: 4/5;
+    grid-row: 3/4;
+}
+
+.experience {
+    grid-column: 1/3;
+    grid-row: 4/7;
+
+}
+
+.img9 {
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+
+.img10 {
+    grid-column: 4/5;
+    grid-row: 4/5;
+}
+
+.img11 {
+    grid-column: 3/4;
+    grid-row: 5/6;
+}
+
+.img12 {
+    grid-column: 4/5;
+    grid-row: 5/6;
+}
+
+.img13 {
+    grid-column: 3/4;
+    grid-row: 6/7;
+}
+
+.img14 {
+    grid-column: 4/5;
+    grid-row: 6/7;
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .divContainer {
+        margin: 0;
+        width: 370px;
+        height: 2012px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(13, 1fr);
+        grid-gap: 10px;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .img {
+        width: 170px;
+        height: 155px;
+    }
+
+    .discover {
+        width: 390px;
+        height: 360px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .discover h1 {
+        width: 240px;
+        height: 47px;
+        text-align: center;
+        font: normal normal bold 36px/47px Assistant;
+        margin: 0;
+    }
+
+    .discover p {
+        width: 287px;
+        height: 78px;
+        text-align: center;
+        font: normal normal normal 20px/26px Assistant;
+        margin: 0;
+        margin-top: 14px;
+    }
+
+    .experience {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+        height: 538px;
+        margin: 0;
+    }
+
+    .experience h2 {
+        width: 242px;
+        height: 33px;
+        text-align: center;
+        font: normal normal bold 25px/33px Assistant;
+        margin: 0;
+    }
+
+    .experience p {
+        width: 278px;
+        height: 38px;
+        text-align: center;
+        font: normal normal normal 15px/19px Assistant;
+    }
+
+    .experience form {
+        width: 278px;
+        height: 238px;
+        margin: 0;
+    }
+
+    .experience form label {
+        width: 26px;
+        height: 10px;
+        text-align: right;
+        font: normal normal bold 7px/10px Heebo;
+        color: #0EE1DA;
+        margin-top: 30px;
+    }
+
+    #emailLabel {
+        margin-top: 0;
+    }
+
+    .inputText {
+        width: 278px;
+        height: 33px;
+    }
+
+    .inputTextExperience {
+        width: 278px;
+        height: 96px;
+    }
+
+    .inputButton {
+        width: 278px;
+        height: 33px;
+        font: normal normal bold 12px/16px Heebo;
+        letter-spacing: 0.18px;
+    }
+
+    .img1 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .img2 {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    .discover {
+        grid-column: 1/3;
+        grid-row: 1/3;
+
+    }
+
+    .img3 {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    .img4 {
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+
+    .img5 {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+
+    .img6 {
+        grid-column: 2/3;
+        grid-row: 5/6;
+    }
+
+    .img7 {
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
+
+    .img8 {
+        grid-column: 2/3;
+        grid-row: 6/7;
+    }
+
+    .experience {
+        grid-column: 1/3;
+        grid-row: 7/11;
+
+    }
+
+    .img9 {
+        grid-column: 1/2;
+        grid-row: 11/12;
+    }
+
+    .img10 {
+        grid-column: 2/3;
+        grid-row: 11/12;
+    }
+
+    .img11 {
+        grid-column: 1/2;
+        grid-row: 12/13;
+    }
+
+    .img12 {
+        grid-column: 2/3;
+        grid-row: 12/13;
+    }
+
+    .img13 {
+        grid-column: 1/2;
+        grid-row: 13/14;
+    }
+
+    .img14 {
+        grid-column: 2/3;
+        grid-row: 13/14;
+    }
+}

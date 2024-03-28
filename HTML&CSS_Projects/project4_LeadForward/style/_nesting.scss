@@ -1,0 +1,171 @@
+body {
+    width: 100vw;
+    height: 1080px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+
+    img {
+        width: 100vw;
+        height: 590px;
+    }
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: $bgColor;
+    width: $divWidth;
+    height: $divHeight;
+    margin: 157px 295px 279px 1056px;
+    position: absolute;
+
+
+    h1 {
+        font: $headingFont;
+        color: $textColor;
+        margin: 76px 75px 0px 80px;
+    }
+
+    p {
+        font: $pFont;
+        color: $pColor;
+        margin: 21px 76px 0px 75px;
+        text-align: center;
+
+    }
+
+    form {
+        margin: 44px 76px 34px 75px;
+        display: flex;
+        flex-direction: column;
+        direction: rtl;
+
+        label {
+            font: $labelFont;
+            color: $textColor;
+        }
+
+        input {
+            width: 418px;
+            height: 50px;
+            border-color: $pinkColor;
+            margin-bottom: 18px;
+        }
+
+        button {
+            width: 166px;
+            height: 50px;
+            margin: 16px 0px 0px 326px;
+            font: normal normal bold 22px/30px Heebo;
+            color: $textColor;
+            background: $pinkColor;
+            border: none;
+        }
+
+
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    body {
+        width: 370px;
+        height: 540px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: flex-start
+    }
+
+    .img {
+        width: 100vw;
+        height: 213px;
+    }
+
+
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 299px;
+        height: 441px;
+        margin: 0;
+        margin-top: 65px;
+        position: absolute;
+    }
+
+    .h1 {
+        width: 200px;
+        height: 67px;
+        text-align: center;
+        font: normal normal 900 25px/30px Heebo;
+        color: #FFFFFF;
+        margin: 0;
+
+    }
+
+    .p {
+        width: 229px;
+        height: 66px;
+        text-align: center;
+        font: normal normal normal 15px/22px Heebo;
+        letter-spacing: 0px;
+        color: #F9F9F9;
+        margin: 0;
+        margin-top: 13px;
+
+    }
+
+    .form {
+        width: 230px;
+        height: 131px;
+        margin: 0;
+        margin-top: 23px;
+        display: flex;
+        flex-direction: column;
+        direction: rtl;
+
+        .label {
+            width: 70px;
+            height: 21px;
+            text-align: right;
+            font: normal normal bold 14px/21px Heebo;
+            color: #FFFFFF;
+        }
+
+        #labelEmail {
+            margin-top: 25px;
+        }
+
+        .inputText {
+            width: 230px;
+            height: 28px;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            border: 1px solid #D31C75;
+            margin: 0px;
+        }
+
+        .button {
+            width: 76px;
+            height: 33px;
+            background: #D31C75 0% 0% no-repeat padding-box;
+            margin: 0;
+            margin-top: 16px;
+            font: normal normal bold 15px/20px Heebo;
+            letter-spacing: 0.23px;
+            color: #FFFFFF;
+            border: none;
+        }
+
+
+
+
+    }
+}

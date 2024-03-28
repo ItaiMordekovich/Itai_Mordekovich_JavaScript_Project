@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.project {
+    width: 100vw;
+    height: 100vh;
+    background: transparent linear-gradient(180deg, #281EFF 0%, #2DFF8C 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 40px #00000066;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project h1 {
+    font: normal normal normal 160px/231px Satisfy;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 36px #00000087;
+}
+
+.project h6 {
+    font: normal normal normal 32px/38px Varela Round;
+    color: #FFFFFF;
+}
+
+.project p {
+    margin-top: 18px;
+    font: normal normal normal 16px/20px Varela Round;
+    color: #F9F9F9;
+}
+
+#form {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+#form label {
+    font: normal normal normal 16px/20px Varela Round;
+    color: #F9F9F9;
+    direction: rtl;
+}
+
+.textInput {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputText {
+    width: 300px;
+    height: 40px;
+    background: #F6F6F624 0% 0% no-repeat padding-box;
+    border: 2px solid #FFFFFF;
+}
+
+#formButton {
+    width: 150px;
+    height: 40px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: none;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 820px) {
+    .project h1 {
+        font-size: 100px;
+    }
+
+    #form {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .project p {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .project h1 {
+        width: 328px;
+        height: 93px;
+        font: normal normal normal 60px/86px Satisfy;
+        text-align: center;
+    }
+
+    .project h6 {
+        width: 298px;
+        height: 22px;
+        font: normal normal normal 18px/22px Varela Round;
+        text-align: center;
+    }
+
+    .project p {
+        width: 318px;
+        height: 120px;
+        font: normal normal normal 16px/20px Varela Round;
+        text-align: center;
+
+    }
+
+    #form label {
+        font: normal normal normal 11px/13px Varela Round;
+    }
+
+    .inputText {
+        width: 300px;
+        height: 36px;
+    }
+
+    #formButton {
+        width: 300px;
+        height: 33px;
+    }
+
+}

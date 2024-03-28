@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100vw;
+}
+
+.project {
+    top: 180px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: absolute;
+
+}
+
+.project h1 {
+    width: 868px;
+    height: 113px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    text-align: right;
+    font: normal normal bold 86px/113px Assistant;
+    color: #D3E10E;
+}
+
+.project p {
+    margin-top: 23px;
+    margin-bottom: 0px;
+    width: 850px;
+    height: 26px;
+    text-align: center;
+    font: normal normal normal 20px/26px Assistant;
+    color: #F9F9F9;
+}
+
+#form {
+    display: flex;
+    gap: 30px;
+    margin-top: 230px;
+    padding-left: 300px;
+}
+
+#form label {
+    text-align: right;
+    font: normal normal bold 16px/21px Assistant;
+    color: #011560;
+}
+
+.textInput {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputText {
+    width: 418px;
+    height: 50px;
+    background: #F6F6F6 0% 0% no-repeat padding-box;
+    border: none;
+    border-bottom: #D3E10E 4px solid;
+}
+
+#btn {
+    width: 166px;
+    height: 50px;
+    background: #D3E10E 0% 0% no-repeat padding-box;
+    font: normal normal bold 22px/30px Assistant;
+    letter-spacing: 0.33px;
+    color: #011560;
+    border: none;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 480px) {
+
+    img {
+        height: 300px;
+    }
+
+    .project {
+        top: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: flex-start
+    }
+
+    .project h1 {
+        width: 330px;
+        height: 30px;
+        text-align: center;
+        font: normal normal bold 25px Assistant;
+        margin: 0;
+
+    }
+
+    .project p {
+        width: 333px;
+        height: 26px;
+        font: normal normal normal 15px/26px Assistant;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    #form {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-left: 0px;
+        gap: 0px;
+        margin-top: 230px;
+
+    }
+
+    #form label {
+        font: normal normal bold 10px/14px Heebo;
+    }
+
+    .textInput {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inputText {
+        width: 286px;
+        height: 34px;
+        background-color: #E5EEFF;
+        margin-top: 3px;
+        margin-bottom: 16px;
+
+    }
+
+    #btn {
+        width: 286px;
+        height: 34px;
+        font: normal normal bold 14px/19px Heebo;
+    }
+}

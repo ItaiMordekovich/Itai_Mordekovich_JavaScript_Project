@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.projectContainer {
+    display: flex;
+}
+
+.projectContainer img {
+    width: 60%;
+    height: 100vh;
+    border: 1px solid #707070;
+}
+
+.projectContent {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+}
+
+.projectContent h1 {
+    font: normal normal 900 43px/63px Heebo;
+    color: #020253;
+}
+
+.projectContent p {
+    width: 417px;
+    height: 58px;
+    margin-top: 22px;
+    direction: rtl;
+    font-size: 20px;
+    padding: 0px 60px;
+    color: #000;
+}
+
+.projectContent form {
+    margin-top: 26px;
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+}
+
+.projectContent form label {
+    font: normal normal bold 16px/24px Heebo;
+    letter-spacing: 0px;
+    color: #2C2C2C;
+}
+
+.inputText {
+    width: 350px;
+    height: 40px;
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+    border: none;
+    border-bottom: 4px solid #020253;
+}
+
+.inputButton {
+    margin-top: 30px;
+    width: 166px;
+    height: 50px;
+    background: #020253 0% 0% no-repeat padding-box;
+    font: normal normal bold 22px/30px Heebo;
+    letter-spacing: 0.33px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 950px) {
+
+    .projectContainer {
+        flex-direction: column;
+    }
+
+    .projectContainer img {
+        width: 100vw;
+        height: 60vh;
+    }
+
+    .projectContent {
+        width: 100vw;
+        border: none;
+        margin-top: 20px;
+    }
+
+    .projectContent p {
+        margin-top: 10px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .projectContainer {
+        flex-direction: column;
+
+    }
+
+    .projectContainer img {
+        width: 100vw;
+        height: 40vh;
+    }
+
+    .projectContent {
+
+        width: 100vw;
+        border: none;
+        margin-top: 10px;
+    }
+
+
+    .projectContent h1 {
+        margin-top: 20px;
+        margin-bottom: 0px;
+        font: normal normal 900 28px/41px Heebo;
+    }
+
+    .projectContent p {
+        margin-top: 17px;
+        margin-bottom: 0px;
+        font: normal normal normal 15px/22px Heebo;
+    }
+
+    .projectContent form {
+        margin-top: 31px;
+        margin-bottom: 0px;
+    }
+
+    .projectContent form label {
+        font: normal normal bold 10px/14px Heebo;
+    }
+
+    .inputText {
+        width: 286px;
+        height: 34px;
+        border-bottom: 3px solid #020253;
+    }
+
+    .inputButton {
+        margin-top: 22px;
+        width: 286px;
+        height: 34px;
+        font: normal normal bold 14px/19px Heebo;
+        letter-spacing: 0.21px;
+    }
+
+}

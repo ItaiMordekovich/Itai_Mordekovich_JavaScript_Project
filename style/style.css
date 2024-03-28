@@ -1,0 +1,925 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.navbar {
+    position: fixed;
+}
+
+.topLine {
+    height: 3px;
+    background: #1AE0EC 0% 0% no-repeat padding-box;
+}
+
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+    padding-left: 30px;
+    width: 100vw;
+    height: 80px;
+    background-color: #FFFFFF;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.navPages {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    direction: rtl;
+    font-size: 25px;
+    font: normal normal normal 25px/37px Heebo;
+    color: #2C2C2C;
+}
+
+.navPages a:hover {
+    color: #1AE0EC;
+    cursor: pointer;
+}
+
+.dropdown {
+    display: none;
+}
+
+#profileImg {
+    width: 62px;
+    height: 62px;
+    border-radius: 31px;
+}
+
+#profileName {
+    font-size: 25px;
+    margin-left: 17px;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Pacifico', cursive;
+}
+
+.headerContainer {
+
+    background-image: url('../images/bgHeader.jpeg');
+    height: 461px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 55%;
+    color: #3A3A3A;
+}
+
+.textContainer>h1 {
+    font: normal normal 900 80px/118px Heebo;
+}
+
+.textContainer>p {
+    font: normal normal 500 20px/30px Heebo;
+    direction: rtl;
+}
+
+.skills {
+    height: 130px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.aboutContainer {
+    height: 715px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutContainer img {
+    width: 141px;
+    height: 139px;
+    margin-top: 100px;
+    border-radius: 145px;
+}
+
+.aboutContainer h1 {
+    height: 52px;
+    margin-top: 24px;
+    font: normal normal 900 35px/52px Heebo;
+    color: #3A3A3A;
+}
+
+.aboutContainer p {
+    width: 798px;
+    height: 232px;
+    margin-top: 13px;
+    text-align: center;
+    font: normal normal normal 20px/35px Heebo;
+    color: #3A3A3A;
+    direction: rtl;
+}
+
+.aboutContainer button {
+    width: 260px;
+    height: 41px;
+    margin-top: 13px;
+    font: normal normal bold 20px/30px Heebo;
+    letter-spacing: 0.3px;
+    color: #3A3A3A;
+    border-radius: 25px;
+    background: #1AE0EC 0% 0% no-repeat padding-box;
+    border: none;
+    cursor: pointer;
+}
+
+/* ------------------------- HTML&CSS Projects ------------------------- */
+
+.projectsContainer {
+    height: 1558px;
+    background: #F6F6F6 0% 0% no-repeat padding-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 3px 20px #00000029;
+}
+
+.projectsContainer h1 {
+    width: 360px;
+    height: 53px;
+    margin-top: 100px;
+    font: normal normal 900 36px/53px Heebo;
+    color: #3A3A3A;
+}
+
+.projectsContainer p {
+    width: 576px;
+    height: 58px;
+    margin-top: 11px;
+    font: normal normal normal 20px/29px Heebo;
+    color: #3A3A3A;
+}
+
+.projectsCardContainer {
+    width: 1315px;
+    height: 1086px;
+    margin-top: 68px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.projectCard {
+    width: 405px;
+    height: 518px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 3px 3px 15px #00000029;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.projectCard img {
+    width: 405px;
+    height: 223px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.projectCard h1 {
+    width: 330px;
+    height: 34px;
+    margin-top: 37.5px;
+    text-align: center;
+    font: normal normal medium 23px/34px Heebo;
+    color: #3A3A3A;
+}
+
+.projectCard p {
+    width: 353px;
+    height: 66px;
+    margin-top: 21px;
+    font: normal normal normal 16px/24px Heebo;
+    color: #3A3A3A;
+}
+
+.projectCardSkills {
+    width: 162px;
+    height: 36px;
+    display: flex;
+    gap: 6px;
+}
+
+.projectCardSkills img {
+    width: 36px;
+    height: 36px;
+}
+
+.projectCard button {
+    width: 153px;
+    height: 30px;
+    margin-top: 28.5px;
+    background: #1AE0EC 0% 0% no-repeat padding-box;
+    border-radius: 15px;
+    font: normal normal bold 14px/26px Heebo;
+    color: #2C2C2C;
+    border: none;
+    cursor: pointer;
+}
+
+/* ------------------------- JavaScript Projects ------------------------- */
+
+.jsProjectsContainer {
+    height: 1300px;
+    background: #e6e4e4 0% 0% no-repeat padding-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 3px 20px #00000029;
+}
+
+.jsProjectsContainer h1 {
+    width: 360px;
+    height: 53px;
+    margin-top: 100px;
+    font: normal normal 900 36px/53px Heebo;
+    color: #3A3A3A;
+}
+
+.jsProjectsContainer p {
+    width: 576px;
+    height: 58px;
+    margin-top: 11px;
+    font: normal normal normal 20px/29px Heebo;
+    color: #3A3A3A;
+}
+
+.jsProjectsCardContainer {
+    width: 1315px;
+    height: 1086px;
+    margin-top: 68px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.jsProjectCard {
+    width: 405px;
+    height: 405px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 3px 3px 15px #00000029;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.jsProjectCard img {
+    width: 405px;
+    height: 223px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.jsProjectCard h1 {
+    width: 330px;
+    height: 34px;
+    margin-top: 20px;
+    text-align: center;
+    font: normal normal medium 23px/34px Heebo;
+    color: #3A3A3A;
+}
+
+.jsProjectCard p {
+    width: 353px;
+    height: 66px;
+    margin-top: 21px;
+    font: normal normal normal 16px/24px Heebo;
+    color: #3A3A3A;
+}
+
+.jsProjectCardSkills {
+    width: 162px;
+    height: 36px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 6px;
+    margin-top: 20px;
+}
+
+.jsProjectCardSkills img {
+    width: 36px;
+    height: 36px;
+}
+
+.jsProjectCard button {
+    width: 153px;
+    height: 30px;
+    margin-top: 15px;
+    background: #9ce2e6 0% 0% no-repeat padding-box;
+    border-radius: 15px;
+    font: normal normal bold 14px/26px Heebo;
+    color: #2C2C2C;
+    border: none;
+    cursor: pointer;
+}
+
+/* ------------------------- Contact Form Projects ------------------------- */
+
+.contactForm {
+    height: 959px;
+    background: #3A3A3A 0% 0% no-repeat padding-box;
+    display: flex;
+}
+
+.contactForm img {
+    width: 700px;
+    height: 500px;
+}
+
+.form {
+    width: 549px;
+    height: 646px;
+    display: flex;
+    flex-direction: column;
+    margin: 161px 204.5px 151.67px 120px;
+}
+
+.form h1 {
+    width: 135px;
+    height: 53px;
+    font: normal normal 900 36px/53px Heebo;
+
+}
+
+.form p {
+    width: 548px;
+    height: 58px;
+    margin-top: 6px;
+    font: normal normal normal 20px/29px Heebo;
+}
+
+.form form {
+    width: 548px;
+    height: 399px;
+    margin-top: 47px;
+}
+
+.form form label {
+    font: normal normal bold 16px/24px Heebo;
+}
+
+.inputText {
+    width: 548px;
+    height: 50px;
+    margin-bottom: 15px;
+    border-bottom-color: #1AE0EC;
+    border-bottom-width: 4px;
+}
+
+.formElement {
+    display: block;
+    color: #fff;
+}
+
+textarea {
+    width: 548px;
+    height: 100px;
+    resize: none;
+    border-bottom-color: #1AE0EC;
+    border-bottom-width: 4px;
+}
+
+#message {
+    color: black;
+}
+
+#submit {
+    width: 166px;
+    height: 50px;
+    margin-top: 30px;
+    font: normal normal bold 22px/30px Heebo;
+    letter-spacing: 0.33px;
+    color: #2C2C2C;
+    background: #1AE0EC 0% 0% no-repeat padding-box;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.contactLinks {
+    height: 200px;
+    background: #1AE0EC 0% 0% no-repeat padding-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 200px;
+}
+
+.contactLinksIcons {
+    height: 80px;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.contactLinksIcons p {
+    margin-top: 20px;
+}
+
+footer {
+    height: 51px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000000 0% 0% no-repeat padding-box;
+}
+
+footer p {
+    height: 29px;
+    font: normal normal 300 20px/29px Heebo;
+    padding: 0 21.5px 0 29px;
+    letter-spacing: 0.5px;
+    color: #1AE0EC;
+}
+
+.underLine {
+    height: 6px;
+    background: #1AE0EC 0% 0% no-repeat padding-box;
+}
+
+@media screen and (max-width: 480px) {
+
+    body {
+        height: 3641px;
+    }
+
+    .navbar {
+        position: static;
+    }
+
+    .topLine {
+        height: 2px;
+    }
+
+    .navContainer {
+        display: flex;
+        align-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 60px;
+    }
+
+    .profile {
+        margin: 0 5px 0 5px;
+    }
+
+    .navPages {
+        display: none;
+    }
+
+    #imgDrop {
+        width: 45px;
+        height: 45px;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 100px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+
+    #profileImg {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+    }
+
+    #profileName {
+        font-size: 25px;
+        margin-left: 5px;
+
+    }
+
+    .headerContainer {
+
+        background-image: url('../images/bgHeader.jpeg');
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .textContainer>h1 {
+        font: normal normal 900 20px/50px Heebo;
+    }
+
+    .textContainer>p {
+        width: 300px;
+        font: normal normal 500 10px/15px Heebo;
+    }
+
+    .skills {
+        height: 60px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        box-shadow: 0px 3px 6px #00000029;
+    }
+
+    .skills img {
+        width: 30px;
+    }
+
+    .aboutContainer {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .aboutContainer img {
+        width: 60px;
+        height: 60px;
+        margin-top: 15px;
+        border-radius: 30px;
+    }
+
+    .aboutContainer h1 {
+        height: 20px;
+        margin-top: 10px;
+        font: normal normal 900 20px/10px Heebo;
+    }
+
+    .aboutContainer p {
+        width: 320px;
+        height: 50px;
+        margin-top: 10px;
+        font: normal normal normal 8px/10px Heebo;
+    }
+
+    .aboutContainer button {
+        width: 95px;
+        height: 20px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font: normal normal bold 10px/5px Heebo;
+        letter-spacing: 0.1px;
+        border-radius: 25px;
+    }
+
+    /* ------------------------- HTML&CSS Projects ------------------------- */
+
+    .projectsContainer {
+        height: 2460px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projectsContainer h1 {
+        width: 360px;
+        height: 30px;
+        margin-top: 20px;
+        font: normal normal 900 25px/10px Heebo;
+        text-align: center;
+    }
+
+    .projectsContainer p {
+        width: 300px;
+        height: 40px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font: normal normal normal 13px/15px Heebo;
+        text-align: center;
+    }
+
+    .projectsCardContainer {
+        width: 342px;
+        height: 800px;
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .projectCard {
+        width: 340px;
+        height: 380px;
+        box-shadow: 3px 3px 5px #00000029;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .projectCard img {
+        width: 340px;
+        height: 200px;
+        border-radius: 5px 5px 0px 0px;
+    }
+
+    .projectCard h1 {
+        width: 200px;
+        height: 20px;
+        margin-top: 20px;
+        text-align: center;
+        font: normal normal medium 10px/5px Heebo;
+    }
+
+    #FreeConsultationH1 {
+        width: 250px;
+        font-size: 30px;
+    }
+
+    .projectCard p {
+        width: 300px;
+        height: 20px;
+        margin-top: 10px;
+        font: normal normal normal 15px/15px Heebo;
+    }
+
+    .projectCardSkills {
+        width: 100px;
+        height: 20px;
+        display: flex;
+        gap: 4px;
+        margin-top: 15px;
+    }
+
+    .projectCardSkills img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .projectCard button {
+        width: 100px;
+        height: 20px;
+        margin-top: 20px;
+        border-radius: 15px;
+        font: normal normal bold 10px/5px Heebo;
+    }
+
+    /* ------------------------- JavaScript Projects ------------------------- */
+
+    .jsProjectsContainer {
+        height: 2460px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .jsProjectsContainer h1 {
+        width: 360px;
+        height: 30px;
+        margin-top: 20px;
+        font: normal normal 900 25px/10px Heebo;
+        text-align: center;
+    }
+
+    .jsProjectsContainer p {
+        width: 300px;
+        height: 40px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font: normal normal normal 13px/15px Heebo;
+        text-align: center;
+    }
+
+    .jsProjectsCardContainer {
+        width: 342px;
+        height: 800px;
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .jsProjectCard {
+        width: 340px;
+        height: 380px;
+        box-shadow: 3px 3px 5px #00000029;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .jsProjectCard img {
+        width: 340px;
+        height: 200px;
+        border-radius: 5px 5px 0px 0px;
+    }
+
+    .jsProjectCard h1 {
+        width: 200px;
+        height: 20px;
+        margin-top: 20px;
+        text-align: center;
+        font: normal normal medium 10px/5px Heebo;
+    }
+
+    #FreeConsultationH1 {
+        width: 250px;
+        font-size: 30px;
+    }
+
+    .jsProjectCard p {
+        width: 300px;
+        height: 20px;
+        margin-top: 10px;
+        font: normal normal normal 15px/15px Heebo;
+    }
+
+    .jsProjectCardSkills {
+        width: 100px;
+        height: 20px;
+        display: flex;
+        gap: 4px;
+        margin-top: 15px;
+    }
+
+    .jsProjectCardSkills img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .jsProjectCard button {
+        width: 100px;
+        height: 20px;
+        margin-top: 20px;
+        border-radius: 15px;
+        font: normal normal bold 10px/5px Heebo;
+    }
+
+    /* ------------------------- Contact Form ------------------------- */
+
+    .contactForm {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 500px;
+    }
+
+    .contactForm img {
+        width: 300px;
+        height: 150px;
+    }
+
+    .form {
+        width: 300px;
+        height: 320px;
+        margin: 0;
+    }
+
+    .form h1 {
+        width: 300px;
+        height: 20px;
+        font: normal normal 900 25px/10px Heebo;
+        text-align: center;
+        margin-top: 10px;
+
+    }
+
+    .form p {
+        width: 300px;
+        height: 40px;
+        font: normal normal normal 15px/15px Heebo;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .form form {
+        width: 280px;
+        height: 250px;
+        margin-top: 10px;
+    }
+
+    .form form label {
+        font: normal normal bold 12px/5px Heebo;
+        margin-top: 8px;
+    }
+
+    .inputText {
+        width: 260px;
+        height: 30px;
+        margin-top: 8px;
+        margin-bottom: 0;
+        border-bottom-width: 3px;
+    }
+
+    ::placeholder {
+        color: rgba(255, 0, 0, 0.4);
+        font-size: 10px;
+        font-weight: bold;
+    }
+
+    textarea {
+        width: 260px;
+        height: 50px;
+        resize: none;
+        margin-top: 8px;
+        border-bottom-width: 3px;
+    }
+
+    #submit {
+        width: 166px;
+        height: 30px;
+        font: normal normal bold 10px/5px Heebo;
+        letter-spacing: 0.33px;
+        margin: auto;
+        margin-top: 5px;
+    }
+
+    .contactLinks {
+        height: 30px;
+        padding: 0;
+    }
+
+    .contactLinksIcons {
+        height: 18px;
+        width: 40px;
+    }
+
+    .contactLinksIcons img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .contactLinksIcons p {
+        font-size: 5px;
+        margin-top: 0;
+    }
+
+    footer {
+        height: 14px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer p {
+        height: 12px;
+        font: normal normal 300 8px/5px Heebo;
+        padding: 4px 5px;
+        letter-spacing: 0.5px;
+    }
+
+    .underLine {
+        height: 3px;
+    }
+
+
+
+
+
+
+
+
+
+
+}
